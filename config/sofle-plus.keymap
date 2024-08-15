@@ -64,8 +64,63 @@
 
         altf4 {
             bindings = <&kp LA(F4)>;
-            key-positions = <60 59 58>;
+            key-positions = <60 59 61>;
             timeout-ms = <0>;
+        };
+
+        del {
+            bindings = <&kp DELETE>;
+            key-positions = <63 56>;
+        };
+
+        f1 {
+            bindings = <&kp F1>;
+            key-positions = <1 2>;
+        };
+
+        f2 {
+            bindings = <&kp F2>;
+            key-positions = <1 3>;
+        };
+
+        f3 {
+            bindings = <&kp F3>;
+            key-positions = <1 4>;
+        };
+
+        f4 {
+            bindings = <&kp F4>;
+            key-positions = <1 5>;
+        };
+
+        f5 {
+            bindings = <&kp F5>;
+            key-positions = <1 6>;
+        };
+
+        f6 {
+            bindings = <&kp F6>;
+            key-positions = <12 7>;
+        };
+
+        f7 {
+            bindings = <&kp F7>;
+            key-positions = <12 8>;
+        };
+
+        f8 {
+            bindings = <&kp F8>;
+            key-positions = <12 9>;
+        };
+
+        f9 {
+            bindings = <&kp F9>;
+            key-positions = <12 10>;
+        };
+
+        f10 {
+            bindings = <&kp F10>;
+            key-positions = <12 11>;
         };
     };
 
@@ -75,11 +130,11 @@
         default_layer {
             display-name = "default";
             bindings = <
-&kp K_APP  &kp GRAVE  &kp N1  &kp N2  &kp N3    &kp N4  &kp N5                             &kp N6     &kp N7     &kp N8     &kp N9   &kp N0    &kp RIGHT_BRACKET  &kp DEL
-&kp K_APP  &kp TAB    &kp Q   &kp W   &kp E     &kp R   &kp T                              &kp Y      &kp U      &kp I      &kp O    &kp P     &kp LEFT_BRACKET   &kp BACKSLASH
-&copy      &kp LCTRL  &kp A   &kp S   &kp D     &kp F   &kp G                              &kp H      &kp J      &kp K      &kp L    &kp SEMI  &kp SQT            &kp HOME
-&paste     &kp LSHFT  &kp Z   &kp X   &kp C     &kp V   &kp B      &to 1    &to 2          &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT          &kp END
-                              &to 1   &kp LCMD  &tdalt  &kp SPACE  &kp ESC  &kp BACKSPACE  &kp ENTER  &kp MINUS  &kp EQUAL  &to 2
+&kp K_APP        &kp GRAVE  &kp N1  &kp N2  &kp N3    &kp N4  &kp N5                             &kp N6     &kp N7     &kp N8     &kp N9   &kp N0    &kp RIGHT_BRACKET  &kp RIGHT_GUI
+&kp PRINTSCREEN  &kp TAB    &kp Q   &kp W   &kp E     &kp R   &kp T                              &kp Y      &kp U      &kp I      &kp O    &kp P     &kp LEFT_BRACKET   &caps_word
+&copy            &kp LCTRL  &kp A   &kp S   &kp D     &kp F   &kp G                              &kp H      &kp J      &kp K      &kp L    &kp SEMI  &kp SQT            &kp LEFT_CONTROL
+&paste           &kp LSHFT  &kp Z   &kp X   &kp C     &kp V   &kp B      &to 1    &to 2          &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp BACKSLASH      &kp RIGHT_SHIFT
+                                    &mo 1   &kp LCMD  &tdalt  &kp SPACE  &kp ESC  &kp BACKSPACE  &kp ENTER  &kp MINUS  &kp EQUAL  &mo 2
             >;
 
             sensor-bindings =
@@ -108,7 +163,7 @@
 &trans  &trans  &trans      &trans     &trans       &trans       &trans                    &trans     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0  &kp KP_RPAR  &trans
 &trans  &trans  &kp INS     &kp PSCRN  &kp K_CMENU  &trans       &trans                    &kp PG_UP  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_EQUAL     &kp KP_LPAR  &trans
 &trans  &trans  &kp LALT    &kp LCTRL  &kp LSHFT    &trans       &kp CLCK                  &kp PG_DN  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ENTER     &kp BSPC     &trans
-&trans  &trans  &kp K_UNDO  &kp K_CUT  &kp K_COPY   &kp K_PASTE  &trans    &to 0   &to 0   &trans     &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp KP_DOT       &trans           &trans       &trans
+&trans  &trans  &kp K_UNDO  &kp K_CUT  &kp K_COPY   &kp K_PASTE  &trans    &to 0   &to 3   &trans     &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp KP_DOT       &trans           &trans       &trans
                             &to 0      &trans       &trans       &trans    &trans  &trans  &trans     &kp KP_MINUS     &kp KP_PLUS      &to 0
             >;
 
